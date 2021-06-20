@@ -1,0 +1,177 @@
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  background-color: #FFFFFF;
+}
+
+button {
+  color: white;
+  background-color: rgb(0, 40, 173);
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto 10px;
+  padding: 15px 15px;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+p a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd" 
+  "main main main main main main sd sd" 
+  "ft ft ft ft ft ft ft ft";
+  margin: 0 100px;
+}
+
+.header {
+  grid-area: hd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  grid-area: ft;
+  text-align: center;
+  padding: 25px;
+  background-color: #DADADA;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar {
+  grid-area: sd;
+  padding: 25px;
+  text-align: left;
+}
+
+.content {
+  grid-area: main;
+  padding: 25px;
+}
+
+#title {
+  order: 1;
+}
+
+#menuNav {
+  order: 2;
+}
+
+#subscribe {
+  order: 3;
+}
+
+#buttonsNav {
+  display: flex;
+  flex-direction: row;
+  justify-self: stretch;
+  align-items: center;
+  list-style: none;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: small;
+  }
+  button {
+    border-radius: 5px;
+    margin: auto 2.5px;
+    padding: 1.2px 2.5px;
+  }
+  .page {
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 200px auto auto 75px;
+    grid-template-areas: 
+    "hd hd" 
+    "sd sd" 
+    "main main " 
+    "ft ft";
+    margin: 0 25px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .sidebar {
+    padding: 6px;
+  }
+  .content {
+    padding: 6px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+  body {
+    font-size: small;
+  }
+  button {
+    border-radius: 10px;
+    margin: auto 5px;
+    padding: 3px 5px;
+  }
+  .page {
+    grid-template-columns: 260px 260px;
+    grid-template-rows: 200px auto auto 75px;
+    grid-template-areas: 
+    "hd hd" 
+    "sd sd" 
+    "main main" 
+    "ft ft";
+    margin: 0 25px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .sidebar {
+    padding: 10px;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1100px) {
+  body {
+    font-size: medium;
+  }
+  button {
+    border-radius: 15px;
+    margin: auto 7.5px;
+    padding: 5px 7.5px;
+  }
+  .page {
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 100px auto auto 75px;
+    grid-template-areas: 
+    "hd hd" 
+    "sd sd" 
+    "main main" 
+    "ft ft";
+    margin: 0 50px;
+  }
+  .sidebar {
+    padding: 18px;
+  }
+  .content {
+    padding: 18px;
+  }
+}

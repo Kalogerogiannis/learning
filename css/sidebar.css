@@ -1,0 +1,116 @@
+.sideBarContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "about" 
+    "archives" 
+    "social";
+    grid-gap: 25px;
+}
+
+.about {
+    grid-area: about;
+    background-color: rgb(218, 218, 218);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 300px;
+    border: 1px wheat dashed;
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 75px auto;
+    grid-template-areas: "h img" "p p";
+}
+
+#photoProfile {
+    width: 80px;
+    height: 80px;
+    border: 1px solid wheat;
+    grid-area: img;
+}
+
+#aboutBio {
+    grid-area: p;
+}
+
+.archives {
+    grid-area: archives;
+    list-style: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.social {
+    grid-area: social;
+    list-style: none;
+    padding: 10px;
+    width: 300px;
+}
+
+.links {
+    list-style: none;
+    border: 1px;
+}
+
+@media (max-width: 320px) {
+    .sideBarContent {
+        grid-template-columns: 260px;
+        grid-gap: 5px;
+    }
+    .about {
+        width: 215px;
+        grid-template-columns: 130px 50px;
+    }
+    .archives {
+        width: 215px;
+    }
+    .social {
+        width: 215px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .sideBarContent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "about about" 
+        "archives social";
+        grid-gap: 10px;
+    }
+    .about {
+        width: 400px;
+        grid-template-columns: 250px 150px;
+        margin-left: 35px;
+    }
+    .archives {
+        width: 215px;
+    }
+    .social {
+        width: 215px;
+    }
+    #avatar {
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1100px) {
+    .sideBarContent {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "archives social about ";
+        grid-gap: 10px;
+    }
+    .about {
+        width: 400px;
+        grid-template-columns: 250px 150px;
+        margin-left: 35px;
+    }
+    .archives {
+        width: 215px;
+    }
+    .social {
+        width: 215px;
+    }
+    #avatar {
+        margin-left: 40px;
+    }
+}

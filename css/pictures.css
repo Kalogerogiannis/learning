@@ -1,0 +1,35 @@
+.picOne {
+    background-image: url("../img/halkidiki.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.picTwo {
+    background-image: url("../img/tinos.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.picThree {
+    background-image: url("../img/skopelos.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.picFour {
+    background-image: url("../img/serifos.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.picFive {
+    background-image: url("../img/kefalonia.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.picSix {
+    background-image: url("../img/ikaria.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
