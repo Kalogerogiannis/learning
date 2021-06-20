@@ -1,4 +1,4 @@
-# Personal-Blog-Website
+# Personal-Blog-Website // Udacity Personal Blog Website Project 1
 
 Personal Blog Website is the first project introduced by Udacity in Front End Developer Nanodegree Program.
 
