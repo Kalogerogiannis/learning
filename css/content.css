@@ -33,11 +33,6 @@ blockquote {
 .blogImage {
     width: 50%;
     height: 500px;
-    margin-left: 25%;
-}
-
-.imageCaption {
-    text-align: center;
 }
 
 @media (max-width: 320px) {
